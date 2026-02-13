@@ -1,14 +1,18 @@
+/*#######################################################################################
+#* Pontificia Universidad Javeriana 
+#* Materia: Introduccion a sistemas distribuidos
+#* Profesor: J. Corredor
+#*Tema: Taller de MPI
+#* Autores: Juan Carlos Santamaría Orjuela
+#* Programa:
+#*      Multiplicación de Matrices 
+######################################################################################*/
 #include <stdlib.h>
 #include <stdio.h>
 #include "mpi.h"
 #include <time.h>
 #include <sys/time.h>
 
-/*
-  In here 'process o' which distribute the workload to other processes is considered 
-  as Root (Master) process and other processes which do the computation is considered 
-  as Slave task processes. 
-*/
 
 // Number of rows and columnns in a matrix
 #define N 4
